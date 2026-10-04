@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Валерій Саврацький — малярні роботи та фарбування в Вінниця</title>
+  <meta name="description" content="Фарбування стін, стель, дверей і декоративне фарбування в Вінниця. Кошторис за 24 години, фіксована ціна, гарантія 2 роки. Від 90 грн/м².">
+  <meta name="theme-color" content="#EBDB9C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- 1. HEADER -->
+  <header class="header" id="top">
+    <a href="#top" class="logo" aria-label="Саврацький, на початок">savrik.</a>
+    <nav class="nav" aria-label="Головне меню">
+      <a href="#services">Послуги</a>
+      <a href="#ba">До / Після</a>
+      <a href="#works">Роботи</a>
+      <a href="#steps">Етапи</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <div class="header__right">
+      <a class="header__tel" href="tel:+380630000000">+380 63 000 00 00</a>
+      <a class="btn btn--dark btn--sm" href="#form">Розрахувати об’єкт</a>
+      <button class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu"><svg class="ic burger__ic" viewBox="0 0 24 24" aria-hidden="true"><path class="b1" d="M4 6h16"/><path class="b2" d="M4 12h16"/><path class="b3" d="M4 18h16"/></svg></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Мобільне меню">
+      <a href="#services">Послуги</a>
+      <a href="#ba">До / Після</a>
+      <a href="#works">Роботи</a>
+      <a href="#steps">Етапи</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <div class="menu__contacts">
+      <a class="btn btn--accent btn--block" href="tel:+380630000000">+380 63 000 00 00</a>
+      <div class="menu__row">
+        <a class="btn btn--line-light" href="https://t.me/your_username">Telegram</a>
+        <a class="btn btn--line-light" href="viber://chat?number=%2B380630000000">Viber</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 2. HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line"><span class="hero__word" data-paint>Чистий</span></span>
+        <span class="hero__line hero__line--right"><span class="hero__word" data-paint>колір</span></span>
+        <span class="sr-only">Малярні роботи та фарбування в Вінниця</span>
+      </h1>
+
+      <div class="hero__mid">
+        <figure class="hero__photo" data-hero-photo>
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80" alt="Світла вітальня після фарбування" width="1200" height="800" fetchpriority="high">
+        </figure>
+        <div class="hero__copy" data-hero-fade>
+          <span class="hero__tag">Малярні роботи в Вінниця</span>
+          <p class="hero__lead">Фарбую стіни, стелі й двері в квартирах, будинках та офісах з 2014 року. Валерій Саврацький.</p>
+          <div class="hero__cta">
+            <a class="btn btn--dark btn--icon" href="#form">Розрахувати об’єкт <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+            <a class="btn btn--line" href="tel:+380630000000">+380 63 000 00 00</a>
+          </div>
+          <p class="hero__note">Безкоштовний замір ✦ від 110 грн/м² ✦ кошторис за 24 години</p>
+        </div>
+        <div class="badge" data-hero-fade aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="badge-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <circle cx="100" cy="100" r="99" class="badge__bg"/>
+            <text class="badge__text"><textPath href="#badge-circle">ГАРАНТІЯ 2 РОКИ ✦ 340+ ОБ’ЄКТІВ ✦ ХАРКІВ ✦ </textPath></text>
+          </svg>
+          <svg class="badge__arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </div>
+      </div>
+
+
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track" data-marquee="40">
+          <span>Фарбування стін</span><i>✦</i><span>Стелі</span><i>✦</i><span>Шпаклівка під фарбу</span><i>✦</i><span>Укоси й молдинги</span><i>✦</i><span>Декоративне фарбування</span><i>✦</i><span>Двері й батареї</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MANIFEST -->
+    <section class="manifest section" aria-label="Підхід">
+      <div class="container">
+        <div class="section__meta"><span class="tag">Підхід</span><span class="muted">Валерій Саврацький, майстер</span></div>
+        <p class="manifest__text" data-manifest>Я не женуся за метрами. Я готую стіну так, щоб колір ліг рівно: без смуг, плям і просвітів. Плівка на підлозі, скотч по краях, прибирання після себе. Ви бачите лише результат.</p>
+      </div>
+    </section>
+
+    <!-- 4. ADVANTAGES -->
+    <section class="bento-sec section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section__head"><h2 class="h2" id="why-title">Чому зі мною<br>спокійно</h2></div>
+        <div class="bento">
+          <article class="bcard bcard--dark" data-reveal>
+            <header class="bcard__top"><span>Досвід</span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></header>
+            <p class="bcard__num"><span data-count="340">340</span><sup>+</sup></p>
+            <p class="bcard__text">квартир, будинків і офісів пофарбовано з 2014 року</p>
+          </article>
+          <figure class="bcard bcard--photo" data-reveal>
+            <img src="https://images.pexels.com/photos/7218029/pexels-photo-7218029.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Фарбування стіни валиками" loading="lazy" width="1400" height="933" data-parallax>
+            <figcaption class="promise"><span class="promise__head"><b>Що ви отримуєте</b><em>Вітальня, Салтівка</em></span><ul><li><span class="promise__num">01</span><span><b>0 грн доплат</b>Сума з кошторису не зростає по ходу робіт.</span></li><li><span class="promise__num">02</span><span><b>Чисто щодня</b>Плівка на підлозі, скотч по краях, пилосос після шліфування.</span></li><li><span class="promise__num">03</span><span><b>Один відповідальний</b>Від заміру до здачі на зв’язку той, хто фарбує.</span></li></ul></figcaption>>
+          </figure>
+          <article class="bcard bcard--accent" data-reveal>
+            <header class="bcard__top"><span>У Вінниця</span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></header>
+            <p class="bcard__num"><span data-count="12">12</span><small>років</small></p>
+            <p class="bcard__text">фарбую сам, без випадкових бригад</p>
+          </article>
+          <article class="bcard bcard--paper" data-reveal>
+            <header class="bcard__top"><span>Кошторис</span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></header>
+            <p class="bcard__num"><span data-count="24">24</span><small>год</small></p>
+            <p class="bcard__text">після заміру — фіксована ціна за м² і загальна сума</p>
+          </article>
+          <article class="bcard bcard--dark" data-reveal>
+            <header class="bcard__top"><span>Гарантія</span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></header>
+            <p class="bcard__num bcard__num--accent"><span data-count="2">2</span><small>роки</small></p>
+            <p class="bcard__text">за договором: відшарування чи плями переробляю безкоштовно</p>
+          </article>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- 5. SERVICES (sticky stack) -->
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head"><h2 class="h2" id="services-title">Послуги<br>і ціни</h2><span class="muted right">ціни за роботу, матеріали окремо.<br>Точна сума — після безкоштовного заміру</span></div>
+        <div class="stack">
+          <article class="scard scard--dark">
+            <header class="scard__head"><h3>Фарбування стін і стель</h3><p class="scard__price"><b>від 110</b> грн/м²</p></header>
+            <div class="scard__body">
+              <figure class="scard__img"><img src="https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Фарбування стіни валиком" loading="lazy" width="1400" height="933"></figure>
+              <div class="scard__info"><ul class="plist"><li><span>Стіни у 2 шари</span><b>від 110 грн/м²</b></li><li><span>Стеля у 2 шари</span><b>від 130 грн/м²</b></li><li><span>Безповітряне фарбування</span><b>від 140 грн/м²</b></li><li><span>Стіни у два кольори</span><b>від 160 грн/м²</b></li></ul><a class="btn btn--accent btn--icon" href="#form">Замовити розрахунок <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+            </div>
+          </article>
+          <article class="scard scard--paper">
+            <header class="scard__head"><h3>Підготовка під фарбування</h3><p class="scard__price"><b>від 170</b> грн/м²</p></header>
+            <div class="scard__body">
+              <figure class="scard__img"><img src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Шпаклювання стіни перед фарбуванням" loading="lazy" width="1400" height="933"></figure>
+              <div class="scard__info"><ul class="plist"><li><span>Ґрунтування, 1 шар</span><b>від 35 грн/м²</b></li><li><span>Фінішна шпаклівка, 2 шари + шліфування</span><b>від 170 грн/м²</b></li><li><span>Армування малярною сіткою</span><b>від 70 грн/м²</b></li><li><span>Видалення старої фарби</span><b>від 60 грн/м²</b></li><li><span>Закладення тріщин</span><b>від 60 грн/пог. м</b></li></ul><a class="btn btn--dark btn--icon" href="#form">Замовити розрахунок <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+            </div>
+          </article>
+          <article class="scard scard--accent">
+            <header class="scard__head"><h3>Укоси, молдинги, плінтуси</h3><p class="scard__price"><b>від 90</b> грн/пог. м</p></header>
+            <div class="scard__body">
+              <figure class="scard__img"><img src="https://images.pexels.com/photos/7217987/pexels-photo-7217987.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Малярний скотч перед фарбуванням" loading="lazy" width="1400" height="933"></figure>
+              <div class="scard__info"><ul class="plist"><li><span>Підготовка укосів під фарбування</span><b>від 160 грн/пог. м</b></li><li><span>Фарбування укосів</span><b>від 90 грн/пог. м</b></li><li><span>Молдинги й багет: шпаклівка + фарба</span><b>від 150 грн/пог. м</b></li><li><span>Фарбування плінтусів</span><b>від 60 грн/пог. м</b></li></ul><a class="btn btn--dark btn--icon" href="#form">Замовити розрахунок <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+            </div>
+          </article>
+          <article class="scard scard--dark">
+            <header class="scard__head"><h3>Декоративне фарбування</h3><p class="scard__price"><b>від 350</b> грн/м²</p></header>
+            <div class="scard__body">
+              <figure class="scard__img"><img src="https://images.pexels.com/photos/37486125/pexels-photo-37486125.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Декоративно пофарбована стіна з фактурою" loading="lazy" width="1400" height="933"></figure>
+              <div class="scard__info"><ul class="plist"><li><span>Декоративна фарба: шовк, оксамит, пісок</span><b>від 350 грн/м²</b></li><li><span>Ефект бетону або венеціанки</span><b>від 450 грн/м²</b></li><li><span>Трафарет і геометрія</span><b>від 400 грн/м²</b></li><li><span>Пробні викраси кольору</span><b>безкоштовно</b></li></ul><a class="btn btn--accent btn--icon" href="#form">Замовити розрахунок <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+            </div>
+          </article>
+          <article class="scard scard--paper">
+            <header class="scard__head"><h3>Двері, батареї, дерево</h3><p class="scard__price"><b>від 250</b> грн/шт</p></header>
+            <div class="scard__body">
+              <figure class="scard__img"><img src="https://images.pexels.com/photos/14613134/pexels-photo-14613134.png?auto=compress&cs=tinysrgb&w=1400" alt="Фарбування дерев’яних віконниць" loading="lazy" width="1400" height="933"></figure>
+              <div class="scard__info"><ul class="plist"><li><span>Двері з лиштвою, з двох сторін</span><b>від 650 грн/шт</b></li><li><span>Батарея / радіатор</span><b>від 250 грн/шт</b></li><li><span>Дерево: вагонка, сходи, вікна</span><b>від 180 грн/м²</b></li><li><span>Метал: ґрати, перила</span><b>від 160 грн/м²</b></li></ul><a class="btn btn--dark btn--icon" href="#form">Замовити розрахунок <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BEFORE / AFTER -->
+    <section class="ba section section--dark" id="ba" aria-labelledby="ba-title">
+      <div class="container">
+        <div class="section__head"><h2 class="h2 h2--accent" id="ba-title">До /<br>Після</h2><p class="muted-light">Хол на П’ятихатках. Стара фарба з плямами — після підготовки й двох шарів.</p></div>
+        <div class="ba__frame" data-ba style="--pos: 50%">
+          <img class="ba__img" src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1800&q=80" alt="Після: рівно пофарбована вітальня" loading="lazy" width="1800" height="1200">
+          <div class="ba__before" aria-hidden="true">
+            <img class="ba__img ba__img--before" src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1800&q=80" alt="" loading="lazy" width="1800" height="1200">
+          </div>
+          <span class="ba__tag ba__tag--l"><b>До</b><span>стара фарба, плями, тріщини</span></span>
+          <span class="ba__tag ba__tag--r"><b>Після</b><span>шпаклівка + 2 шари фарби</span></span>
+          <div class="ba__handle" aria-hidden="true"><span><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="m18 8 4 4-4 4"/><path d="M2 12h20"/><path d="m6 8-4 4 4 4"/></svg></span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Положення шторки до і після">
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GALLERY -->
+    <section class="works section" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section__head"><h2 class="h2" id="works-title">Роботи</h2><span class="muted right">340+ об’єктів<br>з 2014 року</span></div>
+        <div class="filters" role="toolbar" aria-label="Фільтр робіт">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">Усі</button>
+          <button class="chip" data-filter="flat" aria-pressed="false">Квартири</button>
+          <button class="chip" data-filter="house" aria-pressed="false">Будинки</button>
+          <button class="chip" data-filter="office" aria-pressed="false">Офіси</button>
+          <button class="chip" data-filter="decor" aria-pressed="false">Декор</button>
+        </div>
+        <div class="gallery">
+          <button class="gitem" data-id="0" data-cat="flat"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1400&q=80" alt="Вітальня, Олексіївка" loading="lazy" width="1400" height="933"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Вітальня, Олексіївка</span><em>Квартири</em></span></button>
+          <button class="gitem" data-id="1" data-cat="flat"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Спальня, Салтівка" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Спальня, Салтівка</span><em>Квартири</em></span></button>
+          <button class="gitem" data-id="2" data-cat="house"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Будинок, П’ятихатки" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Будинок, П’ятихатки</span><em>Будинки</em></span></button>
+          <button class="gitem" data-id="3" data-cat="office"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="IT-офіс, центр" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>IT-офіс, центр</span><em>Офіси</em></span></button>
+          <button class="gitem" data-id="4" data-cat="house"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=900&q=80" alt="Котедж, Жуковського" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Котедж, Жуковського</span><em>Будинки</em></span></button>
+          <button class="gitem" data-id="5" data-cat="flat"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80" alt="Студія, ХТЗ" loading="lazy" width="1400" height="933"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Студія, ХТЗ</span><em>Квартири</em></span></button>
+          <button class="gitem" data-id="6" data-cat="decor"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Декоративна стіна, Нагірний" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Ефект шовку, Нагірний</span><em>Декор</em></span></button>
+          <button class="gitem" data-id="7" data-cat="house"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="Вітальня в будинку, Пісочин" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Будинок, Пісочин</span><em>Будинки</em></span></button>
+          <button class="gitem" data-id="8" data-cat="decor"><img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80" alt="Двоколірна стіна, Центр" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Двоколірна стіна, Центр</span><em>Декор</em></span></button>
+          <button class="gitem" data-id="9" data-cat="decor"><img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=900&q=80" alt="Акцентна стіна, Олексіївка" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Акцентна стіна, Олексіївка</span><em>Декор</em></span></button>
+          <button class="gitem" data-id="10" data-cat="office"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Шоурум, Сумська" loading="lazy" width="900" height="900"><span class="gitem__more" aria-hidden="true"><span class="gitem__arrows"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></span><span class="gitem__cap"><span>Шоурум, Сумська</span><em>Офіси</em></span></button>
+        </div>
+      </div>
+      <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="pv-title" hidden>
+        <div class="pv">
+          <div class="pv__media">
+            <div class="pv__stage">
+              <img class="pv__img" alt="">
+              <span class="pv__count" data-pv-count></span>
+              <button class="lightbox__btn pv__prev" aria-label="Попереднє фото"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+              <button class="lightbox__btn pv__next" aria-label="Наступне фото"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+            <div class="pv__thumbs" data-pv-thumbs></div>
+          </div>
+          <aside class="pv__info">
+            <span class="pv__cat" data-pv-cat></span>
+            <h3 class="pv__title" id="pv-title" data-pv-title></h3>
+            <p class="pv__loc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span data-pv-loc></span></p>
+            <p class="pv__desc" data-pv-desc></p>
+            <dl class="pv__facts">
+              <div><dt>Площа</dt><dd data-pv-area></dd></div>
+              <div><dt>Термін</dt><dd data-pv-time></dd></div>
+              <div><dt>Рік</dt><dd data-pv-year></dd></div>
+              <div><dt>Фарба</dt><dd data-pv-paint></dd></div>
+            </dl>
+            <ul class="pv__works" data-pv-works></ul>
+            <a class="btn btn--accent btn--icon pv__cta" href="#form" data-pv-cta>Хочу так само <span class="btn__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+            <div class="pv__nav">
+              <button class="pv__navbtn" data-pv-prev><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span>Попередній об’єкт</span></button>
+              <button class="pv__navbtn" data-pv-next><span>Наступний об’єкт</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+          </aside>
+        </div>
+        <button class="lightbox__btn lightbox__close" aria-label="Закрити"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+      </div>
+    </section>
+
+    <!-- 8. STEPS -->
+    <section class="steps section" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section__head"><h2 class="h2" id="steps-title">Як ми<br>працюємо</h2><p class="steps__lead">Від першого дзвінка до здачі — 5 кроків. Ціна й терміни відомі ще до старту.</p></div>
+        <ol class="srows">
+          <li class="srow" data-step data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80">
+            <span class="srow__num">01</span>
+            <span class="srow__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg></span>
+            <h3 class="srow__title">Замір</h3>
+            <p class="srow__text">Приїжджаю у зручний день, дивлюся стан стін, міряю площу. Безкоштовно.</p>
+            <span class="srow__dur">≈ 1 година</span>
+          </li>
+          <li class="srow" data-step data-img="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=700&q=80">
+            <span class="srow__num">02</span>
+            <span class="srow__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg></span>
+            <h3 class="srow__title">Кошторис</h3>
+            <p class="srow__text">Фіксована ціна за м² і загальна сума. Без доплат по ходу.</p>
+            <span class="srow__dur">1–2 дні</span>
+          </li>
+          <li class="srow" data-step data-img="https://images.pexels.com/photos/5691694/pexels-photo-5691694.jpeg?auto=compress&cs=tinysrgb&w=700">
+            <span class="srow__num">03</span>
+            <span class="srow__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span>
+            <h3 class="srow__title">Матеріали</h3>
+            <p class="srow__text">Список під бюджет. Закуповую з чеками, без націнки, доставка на об’єкт.</p>
+            <span class="srow__dur">1–3 дні</span>
+          </li>
+          <li class="srow" data-step data-img="https://images.pexels.com/photos/7218029/pexels-photo-7218029.jpeg?auto=compress&cs=tinysrgb&w=700">
+            <span class="srow__num">04</span>
+            <span class="srow__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect width="16" height="6" x="2" y="2" rx="2"/><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect width="4" height="6" x="8" y="16" rx="1"/></svg></span>
+            <h3 class="srow__title">Роботи</h3>
+            <p class="srow__text">Кімната без шпаклівки — 1–2 дні, з повною підготовкою — 5–8 днів, квартира — 2–4 тижні.</p>
+            <span class="srow__dur">2 дні – 4 тижні</span>
+          </li>
+          <li class="srow" data-step data-img="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=700&q=80">
+            <span class="srow__num">05</span>
+            <span class="srow__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></svg></span>
+            <h3 class="srow__title">Здача</h3>
+            <p class="srow__text">Перевіряємо разом при денному світлі, дрібні правки — одразу. Прибираю за собою.</p>
+            <span class="srow__dur">≈ 1 день</span>
+          </li>
+        </ol>
+        <p class="srows__note">Терміни орієнтовні: залежать від площі, стану стін, кількості шарів і часу висихання матеріалів. Точний графік фіксую в кошторисі після заміру.</p>
+        <figure class="srow-float" aria-hidden="true"><img alt=""></figure>
+      </div>
+    </section>
+
+    <!-- 9. REVIEWS -->
+    <section class="reviews section section--accent" id="reviews" aria-labelledby="reviews-title">
+      <div class="container section__head"><h2 class="h2" id="reviews-title">Відгуки</h2><div class="score"><b class="score__num">4,9</b><div class="score__meta"><span class="stars stars--lg" role="img" aria-label="Середня оцінка 4,9 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span>86 відгуків у Google</span></div></div></div>
+      <div class="reel" data-reel="-1">
+        <div class="reel__track">
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Двокімнатна</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Пофарбував двокімнатну за 12 днів. Кути ідеальні, на підлозі жодної краплі.</blockquote><figcaption><span class="ava">О</span><span class="review__who"><b>Олена</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Олексіївка</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Фарбування стін</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Взяв фіксовану ціну і не додав ні гривні. Порадив фарбу, яка миється.</blockquote><figcaption><span class="ava">С</span><span class="review__who"><b>Сергій</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Салтівка</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Спальня</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Темно-синя спальня без жодної смуги. Друзі питають контакт.</blockquote><figcaption><span class="ava">І</span><span class="review__who"><b>Ірина</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Центр</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Будинок</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Фарбували будинок по кімнатах, поки ми жили. Щодня прибирав.</blockquote><figcaption><span class="ava">А</span><span class="review__who"><b>Андрій</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>П’ятихатки</span></span></figcaption></figure>
+        </div>
+      </div>
+      <div class="reel" data-reel="1">
+        <div class="reel__track">
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Дитяча</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Дитяча у лавандовому кольорі. Підібрав відтінок на пробниках.</blockquote><figcaption><span class="ava">М</span><span class="review__who"><b>Марина</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>ХТЗ</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Офіс</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Офіс 140 м² за вихідні, щоб не зупиняти роботу. Чітко.</blockquote><figcaption><span class="ava">В</span><span class="review__who"><b>Віктор</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Нагірний</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 4 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star star--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Стеля</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Перефарбував стелю після сусідів, плям не видно взагалі. Почав на день пізніше, але попередив.</blockquote><figcaption><span class="ava">Т</span><span class="review__who"><b>Тетяна</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Холодна Гора</span></span></figcaption></figure>
+          <figure class="review"><div class="review__top"><span class="stars" role="img" aria-label="Оцінка 5 з 5"><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="ic star" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="review__tag">Двері й лиштви</span></div><svg class="ic review__q" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><blockquote>Двері й лиштви як нові. Акуратний і пунктуальний.</blockquote><figcaption><span class="ava">О</span><span class="review__who"><b>Олег</b><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Жуковського</span></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__side"><h2 class="h2" id="faq-title">Часті<br>питання</h2><p class="muted">Не знайшли відповідь — напишіть у Telegram, відповідаю протягом години.</p></div>
+        <div class="acc">
+          <div class="acc__item is-open"><h3><button class="acc__btn" aria-expanded="true" aria-controls="faq1" id="faq1-b">Скільки коштує пофарбувати кімнату?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq1" role="region" aria-labelledby="faq1-b"><p>Залежить від стану стін. Кімната 18 м² — це близько 45 м² стін і 18 м² стелі. Лише фарбування у 2 шари — орієнтовно 7 300–9 400 грн за роботу, з шпаклівкою під фарбу — 20 000–26 000 грн. Матеріали окремо, точну суму фіксую в кошторисі після заміру.</p></div></div>
+          <div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="faq2" id="faq2-b">Ви купуєте матеріали?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq2" role="region" aria-labelledby="faq2-b" hidden><p>Можу. Складаю список під ваш бюджет і закуповую з чеками за ціною магазину, без націнки. Або працюю з вашими матеріалами.</p></div></div>
+          <div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="faq3" id="faq3-b">Скільки триває фарбування квартири?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq3" role="region" aria-labelledby="faq3-b" hidden><p>Лише фарбування однокімнатної квартири — 3–5 днів. З повною підготовкою під фарбу (ґрунт, 2 шари шпаклівки, шліфування) — 2,5–4 тижні, бо кожен шар має висохнути. Точний графік — у кошторисі.</p></div></div>
+          <div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="faq4" id="faq4-b">Чи можна жити в квартирі під час робіт?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq4" role="region" aria-labelledby="faq4-b" hidden><p>Так. Працюю по кімнатах, накриваю меблі плівкою й прибираю щодня.</p></div></div>
+          <div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="faq5" id="faq5-b">Яку фарбу ви радите?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq5" role="region" aria-labelledby="faq5-b" hidden><p>Для житлових кімнат — миючі матові або шовковисто-матові фарби. Підберу варіант під бюджет і призначення кімнати.</p></div></div>
+          <div class="acc__item"><h3><button class="acc__btn" aria-expanded="false" aria-controls="faq6" id="faq6-b">Що входить у гарантію?<span class="acc__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path class="acc__v" d="M12 5v14"/></svg></span></button></h3><div class="acc__panel" id="faq6" role="region" aria-labelledby="faq6-b" hidden><p>2 роки на відшарування, тріщини й плями з моєї вини. Такі дефекти переробляю безкоштовно.</p></div></div>
+          <span class="acc__end" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FORM -->
+    <section class="lead section section--dark" id="form" aria-labelledby="form-title">
+      <div class="container lead__grid">
+        <div class="lead__side">
+          <h2 class="h2 h2--accent" id="form-title">Розрахувати<br>об’єкт</h2>
+          <p class="muted-light">Опишіть задачу — передзвоню, уточню деталі й призначу безкоштовний замір.</p>
+          <div class="preview" data-preview>
+            <div class="preview__head">
+              <span class="preview__label">Ваш об’єкт</span>
+              <span class="preview__room" data-room>1 вид робіт</span>
+            </div>
+            <div class="preview__collage" data-collage>
+              <p class="preview__empty">Оберіть вид робіт — тут з’явиться ваш об’єкт</p>
+            </div>
+            <div class="plan">
+              <div class="plan__head"><span>План робіт</span><span data-plan-total></span></div>
+              <div class="plan__bar" data-plan></div>
+              <ul class="plan__legend" data-plan-legend></ul>
+            </div>
+            <dl class="preview__stats">
+              <div><dt>Площа</dt><dd><span data-s-area>60</span> м²</dd></div>
+              <div><dt>Термін</dt><dd><span data-s-days>3</span> <span data-s-days-w>дні</span></dd></div>
+              <div><dt>Фарба</dt><dd>≈ <span data-s-paint>14</span> л</dd><small data-s-buckets></small></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="form" novalidate>
+          <div class="form__row">
+            <label class="field"><span>Ім’я</span><input type="text" name="name" placeholder="Як до вас звертатися" autocomplete="name" required></label>
+            <label class="field"><span>Телефон</span><input type="tel" name="phone" value="+380 " inputmode="tel" autocomplete="tel" required></label>
+          </div>
+          <fieldset class="field">
+            <legend>Що потрібно зробити</legend>
+            <div class="chips">
+              <label class="chip chip--light"><input type="checkbox" name="work" value="walls" data-img="https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Стіни" checked>Стіни</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="ceiling" data-img="https://images.pexels.com/photos/5691610/pexels-photo-5691610.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Стеля">Стеля</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="prep" data-img="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Шпаклівка під фарбу">Шпаклівка під фарбу</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="slopes" data-img="https://images.pexels.com/photos/7217987/pexels-photo-7217987.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Укоси">Укоси</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="decor" data-img="https://images.pexels.com/photos/37486125/pexels-photo-37486125.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Декор">Декор</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="doors" data-img="https://images.pexels.com/photos/14613134/pexels-photo-14613134.png?auto=compress&cs=tinysrgb&w=900" data-label="Двері">Двері</label>
+              <label class="chip chip--light"><input type="checkbox" name="work" value="radiators" data-img="https://images.pexels.com/photos/7217921/pexels-photo-7217921.jpeg?auto=compress&cs=tinysrgb&w=900" data-label="Батареї">Батареї</label>
+            </div>
+          </fieldset>
+          <label class="field qty" data-qty="walls">
+            <span class="field__split"><span>Площа стін</span><b><output data-out="area">60</output> м²</b></span>
+            <input class="range" type="range" name="area" min="5" max="400" step="5" value="60">
+          </label>
+          <label class="field qty" data-qty="ceiling" hidden>
+            <span class="field__split"><span>Площа стелі</span><b><output data-out="ceilArea">20</output> м²</b></span>
+            <input class="range" type="range" name="ceilArea" min="2" max="200" step="1" value="20">
+          </label>
+          <label class="field qty" data-qty="slopes" hidden>
+            <span class="field__split"><span>Довжина укосів</span><b><output data-out="slopes">10</output> пог. м</b></span>
+            <input class="range" type="range" name="slopes" min="1" max="80" step="1" value="10">
+          </label>
+          <label class="field qty" data-qty="decor" hidden>
+            <span class="field__split"><span>Площа декору</span><b><output data-out="decorArea">10</output> м²</b></span>
+            <input class="range" type="range" name="decorArea" min="1" max="80" step="1" value="10">
+          </label>
+          <div class="field qty qty--step" data-qty="doors" hidden>
+            <span class="field__split"><span>Кількість дверей</span></span>
+            <div class="stepper"><button type="button" class="stepper__btn" data-step="-1" aria-label="Менше">−</button><output data-out="doors">2</output><input type="hidden" name="doors" value="2"><button type="button" class="stepper__btn" data-step="1" aria-label="Більше">+</button></div>
+          </div>
+          <div class="field qty qty--step" data-qty="radiators" hidden>
+            <span class="field__split"><span>Кількість батарей</span></span>
+            <div class="stepper"><button type="button" class="stepper__btn" data-step="-1" aria-label="Менше">−</button><output data-out="radiators">3</output><input type="hidden" name="radiators" value="3"><button type="button" class="stepper__btn" data-step="1" aria-label="Більше">+</button></div>
+          </div>
+          <p class="form__hint" data-prep-hint hidden>Шпаклівку рахую на площу стін і стелі.</p>
+          <label class="upload">
+            <input type="file" name="photos" accept="image/*" multiple>
+            <span class="upload__text">Додати фото стін <em>до 5 файлів</em></span>
+            <span class="upload__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h6"/><path d="M19 2v6"/><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/><circle cx="9" cy="9" r="2"/></svg></span>
+          </label>
+          <p class="form__note">Це приблизна оцінка за середніми цінами майстрів Вінниці. Матеріали окремо. Точну суму фіксую в кошторисі після безкоштовного заміру: вона залежить від стану стін, висоти стелі та кількості кутів і отворів.</p>
+          <p class="form__error" role="alert" hidden></p>
+          <div class="form__foot">
+            <p class="form__est">Орієнтовно за роботу:<br><b><span data-est-min>6 600</span> – <span data-est-max>8 400</span> грн</b></p>
+            <button class="btn btn--accent btn--icon" type="submit">Надіслати заявку <span class="btn__ic"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></button>
+          </div>
+        </form>
+
+        <div class="success" hidden>
+          <span class="success__ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" pathLength="1"/></svg></span>
+          <h3>Заявку надіслано</h3>
+          <p class="muted-light">Передзвоню протягом 30 хвилин у робочий час.</p>
+          <button class="btn btn--line-light" type="button" data-reset>Надіслати ще одну</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer">
+    <a class="footer__marquee" href="tel:+380630000000" aria-label="Подзвонити: +380 63 000 00 00">
+      <div class="footer__track" data-marquee="30" aria-hidden="true">
+        <span>Пофарбую рівно</span><i>✦</i><span>Подзвоніть</span><i>✦</i><span>Пофарбую рівно</span><i>✦</i><span>Подзвоніть</span><i>✦</i>
+      </div>
+    </a>
+    <div class="container footer__grid">
+      <div class="footer__brand"><span class="logo">savrik.</span><p>Валерій Саврацький. Малярні роботи та фарбування в Вінниця й області.</p></div>
+      <div><span class="footer__label">Телефон</span><a href="tel:+380630000000">+380 63 000 00 00</a></div>
+      <div><span class="footer__label">Месенджери</span><a href="https://t.me/your_username">Telegram</a><a href="viber://chat?number=%2B380630000000">Viber</a></div>
+      <div><span class="footer__label">Графік</span><p>Пн–Сб, 8:00–20:00<br>Замір безкоштовно</p></div>
+    </div>
+    <div class="container footer__bottom"><span>© 2026 Саврацький</span><a href="#top" class="footer__top" data-totop>Вгору <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></span></a></div>
+  </footer>
+
+  <nav class="callbar" aria-label="Швидкий зв’язок">
+    <a href="tel:+380630000000">Подзвонити</a>
+    <a href="#form" class="callbar__accent">Розрахувати</a>
+  </nav>
+
+  <button class="totop" type="button" aria-label="Прокрутити вгору" data-totop>
+    <svg class="totop__ring" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="25" pathLength="1"/></svg>
+    <span class="totop__ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></span>
+  </button>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

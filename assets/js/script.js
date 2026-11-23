@@ -1,4 +1,4 @@
-/* Оклен — малярні роботи. GSAP + ScrollTrigger + Flip + Lenis */
+/* Саврацький — механізована штукатурка. GSAP + ScrollTrigger + Flip + Lenis */
 (() => {
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -197,41 +197,41 @@
   const U = id => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1600&q=80`;
   const PX = (id, ext = 'jpeg') => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.${ext}?auto=compress&cs=tinysrgb&w=1600`;
   const PROJECTS = [
-    { title: 'Вітальня з паркетом', loc: 'Олексіївка, вул. Клочківська', area: '52 м² стін', time: '6 днів', year: '2026', paint: 'Caparol, матова миюча',
-      desc: 'Стара фарба з тріщинами по кутах. Зняли верхній шар, прошпаклювали у 2 шари під лампу й пофарбували у теплий білий.',
-      works: ['Видалення старої фарби', 'Фінішна шпаклівка', 'Фарбування стін', 'Укоси вікон'], photos: [U('1493809842364-78817add7ffb'), PX(5691622), PX(7218579), U('1586023492125-27b2c045efd7')] },
-    { title: 'Спальня у сірому', loc: 'Салтівка, Північна Салтівка', area: '38 м² стін + 14 м² стелі', time: '5 днів', year: '2026', paint: 'Tikkurila, глибоко-матова',
-      desc: 'Спокійний сірий з акцентом за узголів’ям. Стелю вирівняли й пофарбували без смуг під бокове світло.',
-      works: ['Шпаклівка стелі', 'Фарбування стелі', 'Фарбування стін', 'Акцентна стіна'], photos: [U('1505693416388-ac5ce068fe85'), U('1615874959474-d609969a20ed'), PX(5691610)] },
-    { title: 'Фасадні елементи будинку', loc: 'П’ятихатки', area: '120 м²', time: '9 днів', year: '2025', paint: 'Sniezka, фасадна',
-      desc: 'Перефарбування дерев’яних і металевих елементів: віконниці, перила, двері. Захисні шари під погоду.',
-      works: ['Підготовка дерева', 'Фарбування дерева', 'Метал: перила', 'Двері з лиштвою'], photos: [U('1600585154340-be6161a56a0c'), PX(14613134, 'png'), PX(7217987)] },
-    { title: 'IT-офіс на 140 м²', loc: 'Центр, вул. Сумська', area: '310 м² стін', time: '2 вихідних + 3 дні', year: '2025', paint: 'Caparol, зносостійка',
-      desc: 'Фарбували вечорами й у вихідні, щоб команда працювала без перерв. Безповітряним методом — рівно і швидко.',
-      works: ['Ґрунтування', 'Безповітряне фарбування', 'Фарбування дверей', 'Прибирання щодня'], photos: [U('1497366216548-37526070297c'), U('1524758631624-e2822e304c36'), PX(7218029)] },
-    { title: 'Котедж: вітальня й хол', loc: 'Жуковського', area: '96 м² стін + 40 м² стелі', time: '12 днів', year: '2026', paint: 'Tikkurila, шовковисто-матова',
-      desc: 'Повна підготовка після будівельників: армування сіткою, 2 шари шпаклівки, шліфування та фарбування у світлий беж.',
-      works: ['Армування сіткою', 'Шпаклівка під фарбу', 'Стеля', 'Стіни', 'Молдинги'], photos: [U('1583847268964-b28dc8f51f92'), PX(5691622), PX(5691610), U('1554995207-c18c203602cb')] },
-    { title: 'Студія під оренду', loc: 'ХТЗ', area: '64 м² стін', time: '4 дні', year: '2026', paint: 'Sniezka, миюча',
-      desc: 'Швидке оновлення між орендарями: закладення тріщин, ґрунт і 2 шари стійкої до миття фарби.',
-      works: ['Закладення тріщин', 'Ґрунтування', 'Фарбування стін', 'Батареї'], photos: [U('1522708323590-d24dbb6b0267'), PX(5583116), PX(5691694)] },
-    { title: 'Ефект шовку у вітальні', loc: 'Нагірний район', area: '18 м²', time: '3 дні', year: '2025', paint: 'Декоративна, перламутрова',
-      desc: 'Акцентна стіна з м’яким перламутровим блиском. Підібрали відтінок на трьох пробних викрасах.',
-      works: ['Підготовка основи', 'Декоративне фарбування', 'Пробні викраси'], photos: [U('1616486338812-3dadae4b4ace'), PX(37486125), U('1618221195710-dd6b41faaea6')] },
-    { title: 'Вітальня в приватному будинку', loc: 'Пісочин', area: '70 м² стін', time: '7 днів', year: '2025', paint: 'Caparol, матова',
-      desc: 'Світлі стіни під дерев’яні меблі. Плінтуси й укоси пофарбували окремо, з чіткою лінією під скотч.',
-      works: ['Шпаклівка під фарбу', 'Фарбування стін', 'Укоси', 'Плінтуси'], photos: [U('1513694203232-719a280e022f'), PX(7217987), PX(7218579)] },
-    { title: 'Двоколірна стіна', loc: 'Центр', area: '22 м²', time: '2 дні', year: '2026', paint: 'Tikkurila, глибоко-матова',
-      desc: 'Розділення стіни на два кольори з рівною горизонтальною лінією на висоті 1,1 м.',
-      works: ['Розмітка', 'Фарбування у два кольори'], photos: [U('1567016432779-094069958ea5'), PX(7217987), PX(5583126)] },
-    { title: 'Акцентна стіна за диваном', loc: 'Олексіївка', area: '15 м²', time: '1 день', year: '2026', paint: 'Sniezka, матова',
-      desc: 'Одна стіна в насиченому кольорі, щоб зонувати кімнату. Решту освіжили в білому.',
-      works: ['Фарбування стін', 'Акцентна стіна'], photos: [U('1484101403633-562f891dc89a'), PX(5583126)] },
-    { title: 'Шоурум меблів', loc: 'Центр, вул. Сумська', area: '180 м² стін', time: '6 днів', year: '2025', paint: 'Caparol, зносостійка',
-      desc: 'Білі стіни, на яких добре виглядають меблі. Працювали до відкриття, без зупинки продажів.',
-      works: ['Ґрунтування', 'Безповітряне фарбування', 'Молдинги'], photos: [U('1524758631624-e2822e304c36'), U('1497366216548-37526070297c'), PX(7218029)] },
+    { title: 'Вітальня у вторинці', loc: 'Олексіївка, вул. Клочківська', area: '52 м² стін', time: '4 дні', year: '2026', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Стара штукатурка відшаровувалась, перепади до 25 мм. Збили до основи, виставили маяки під лазер і відштукатурили машиною.',
+      works: ['Демонтаж старої штукатурки', 'Ґрунтування', 'Маяки під лазер', 'Машинна штукатурка', 'Укоси вікон'], photos: [U('1493809842364-78817add7ffb'), PX(5691622), PX(7218579), U('1586023492125-27b2c045efd7')] },
+    { title: 'Спальня зі стелею', loc: 'Салтівка, Північна Салтівка', area: '38 м² стін + 14 м² стелі', time: '3 дні', year: '2026', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Перепад плит перекриття 4 см. Вирівняли стелю по маяках, стіни — у площину під фарбування з боковим світлом.',
+      works: ['Армування рустів', 'Штукатурка стелі', 'Штукатурка стін', 'Затирка під фарбу'], photos: [U('1505693416388-ac5ce068fe85'), U('1615874959474-d609969a20ed'), PX(5691610)] },
+    { title: 'Будинок з газоблоку', loc: 'П’ятихатки', area: '320 м² стін', time: '9 днів', year: '2025', paint: 'Ceresit CT 24 / Knauf MP 75',
+      desc: 'Новий будинок після коробки. Бетонконтакт, сітка на стиках матеріалів, маяки й машинна штукатурка всіх кімнат.',
+      works: ['Бетонконтакт', 'Армування стиків', 'Маяки під лазер', 'Машинна штукатурка'], photos: [U('1600585154340-be6161a56a0c'), PX(14613134, 'png'), PX(7217987)] },
+    { title: 'IT-офіс на 140 м²', loc: 'Центр, вул. Сумська', area: '310 м² стін', time: '2 вихідних + 3 дні', year: '2025', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Штукатурили вечорами й у вихідні, щоб команда працювала без перерв. Машиною — рівно і швидко.',
+      works: ['Ґрунтування', 'Машинна штукатурка', 'Укоси', 'Прибирання щодня'], photos: [U('1497366216548-37526070297c'), U('1524758631624-e2822e304c36'), PX(7218029)] },
+    { title: 'Котедж: вітальня й хол', loc: 'Жуковського', area: '96 м² стін + 40 м² стелі', time: '6 днів', year: '2026', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Висота 4,2 м, стіни з перепадами після будівельників. Армування сіткою, маяки під лазер, кути строго 90°.',
+      works: ['Армування сіткою', 'Маяки під лазер', 'Стеля', 'Стіни', 'Кути 90°'], photos: [U('1583847268964-b28dc8f51f92'), PX(5691622), PX(5691610), U('1554995207-c18c203602cb')] },
+    { title: 'Студія в новобудові', loc: 'ХТЗ', area: '64 м² стін', time: '2 дні', year: '2026', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Квартира від забудовника: ґрунт, маяки й машинна штукатурка за два дні, готово під шпаклівку.',
+      works: ['Ґрунтування', 'Маяки під лазер', 'Машинна штукатурка', 'Укоси'], photos: [U('1522708323590-d24dbb6b0267'), PX(5583116), PX(5691694)] },
+    { title: 'Санвузол під плитку', loc: 'Нагірний район', area: '18 м²', time: '2 дні', year: '2025', paint: 'Ceresit CT 24, цементна',
+      desc: 'Цементна штукатурка під великоформатну плитку. Площини під 2 мм на 2 м — плиточник клав без підрізок клею.',
+      works: ['Підготовка основи', 'Цементна штукатурка', 'Кути 90°'], photos: [U('1616486338812-3dadae4b4ace'), PX(37486125), U('1618221195710-dd6b41faaea6')] },
+    { title: 'Вітальня в приватному будинку', loc: 'Пісочин', area: '70 м² стін', time: '3 дні', year: '2025', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Цегляні стіни з перепадами до 40 мм. Вивели у площину, укоси — під кутом, затерли під фарбування.',
+      works: ['Ґрунтування', 'Машинна штукатурка', 'Укоси', 'Затирка під фарбу'], photos: [U('1513694203232-719a280e022f'), PX(7217987), PX(7218579)] },
+    { title: 'Ванна й кухня', loc: 'Центр', area: '22 м²', time: '2 дні', year: '2026', paint: 'Ceresit CT 24, цементна',
+      desc: 'Мокрі зони на цементній суміші, гідроізоляція у ванній. Стіни готові під плитку без додаткового вирівнювання.',
+      works: ['Цементна штукатурка', 'Гідроізоляція'], photos: [U('1567016432779-094069958ea5'), PX(7217987), PX(5583126)] },
+    { title: 'Санвузол у вторинці', loc: 'Олексіївка', area: '15 м²', time: '1 день', year: '2026', paint: 'Ceresit CT 24, цементна',
+      desc: 'Після демонтажу старої плитки — цементна штукатурка по маяках під нову плитку.',
+      works: ['Демонтаж', 'Цементна штукатурка'], photos: [U('1484101403633-562f891dc89a'), PX(5583126)] },
+    { title: 'Шоурум меблів', loc: 'Центр, вул. Сумська', area: '180 м² стін', time: '3 дні', year: '2025', paint: 'Knauf MP 75, гіпсова',
+      desc: 'Рівні площини, на яких не видно тіней від підсвітки. Працювали до відкриття, без зупинки продажів.',
+      works: ['Ґрунтування', 'Машинна штукатурка', 'Затирка під фарбу'], photos: [U('1524758631624-e2822e304c36'), U('1497366216548-37526070297c'), PX(7218029)] },
   ];
-  const CAT_NAME = { flat: 'Квартира', house: 'Будинок', office: 'Офіс', decor: 'Декор' };
+  const CAT_NAME = { flat: 'Квартира', house: 'Будинок', office: 'Офіс', decor: 'Санвузол' };
 
   const lb = $('.lightbox');
   document.body.appendChild(lb); // out of any transformed/animated parent
@@ -363,27 +363,25 @@
   const phone = form.elements.phone, estMin = $('[data-est-min]'), estMax = $('[data-est-max]');
   const fmt = n => n.toLocaleString('uk-UA');
   /* ---------- calculator + live object preview ----------
-     Rates: average prices of good painters in Kharkiv, 2026 (work only, materials extra).
-     per = output of one painter per working day; dry = extra days for drying.
+     Rates: average prices for machine plastering in Vinnytsia, 2026 (work only, materials extra).
+     per = crew output per working day; dry = extra days for drying.
      Final price is always fixed after an on-site survey. */
   const WORKS = {
-    prep:      { name: 'Шпаклівка',  unit: 'м²',     min: 205, max: 260, per: 15, dry: 1, color: '#9C9580' }, // ґрунт 35 + фініш 2 шари 170
-    ceiling:   { name: 'Стеля',      unit: 'м²',     min: 130, max: 170, per: 35, dry: 0, color: '#F7F4EA' },
-    walls:     { name: 'Стіни',      unit: 'м²',     min: 110, max: 140, per: 50, dry: 0, color: '#EBDB9C' },
-    slopes:    { name: 'Укоси',      unit: 'пог. м', min: 250, max: 320, per: 10, dry: 0, color: '#B7AE96' }, // підготовка 160 + фарба 90
-    decor:     { name: 'Декор',      unit: 'м²',     min: 350, max: 600, per: 10, dry: 1, color: '#C9A27E' },
-    doors:     { name: 'Двері',      unit: 'шт',     min: 650, max: 900, per: 2,  dry: 0, color: '#6F7A68' },
-    radiators: { name: 'Батареї',    unit: 'шт',     min: 250, max: 400, per: 5,  dry: 0, color: '#8A8F95' },
+    prep:      { name: 'Ґрунт і сітка', unit: 'м²',  min: 70,  max: 95,  per: 80, dry: 0, color: '#9C9580' }, // ґрунт 25 + сітка 45–70
+    ceiling:   { name: 'Стеля',      unit: 'м²',     min: 300, max: 400, per: 80, dry: 0, color: '#F7F4EA' },
+    walls:     { name: 'Стіни',      unit: 'м²',     min: 300, max: 380, per: 100, dry: 0, color: '#EBDB9C' },
+    slopes:    { name: 'Укоси',      unit: 'пог. м', min: 220, max: 300, per: 15, dry: 0, color: '#B7AE96' },
+    decor:     { name: 'Цементна',   unit: 'м²',     min: 300, max: 400, per: 80, dry: 1, color: '#C9A27E' },
   };
-  const ORDER = ['prep', 'ceiling', 'walls', 'slopes', 'decor', 'doors', 'radiators'];
-  const PAINT_L = { walls: .25, ceiling: .25, decor: .3 }; // 2 coats ≈ 1 l per 8 m², decor a bit more
+  const ORDER = ['prep', 'ceiling', 'walls', 'slopes', 'decor'];
+  const PAINT_L = { walls: 13, ceiling: 11, slopes: 5, decor: 20 }; // kg of dry mix per m² (пог. м for slopes) at ~15 mm
   const workInputs = $$('input[name="work"]', form);
   const collage = $('[data-collage]'), preview = $('[data-preview]');
   const sArea = $('[data-s-area]'), sDays = $('[data-s-days]'), sDaysW = $('[data-s-days-w]'), sPaint = $('[data-s-paint]'), room = $('[data-room]');
   const planBar = $('[data-plan]'), planLegend = $('[data-plan-legend]'), planTotal = $('[data-plan-total]'), planBox = $('.plan'), buckets = $('[data-s-buckets]');
   const prepHint = $('[data-prep-hint]');
   const val = n => +form.elements[n].value;
-  const qtyOf = k => ({ walls: val('area'), ceiling: val('ceilArea'), slopes: val('slopes'), decor: val('decorArea'), doors: val('doors'), radiators: val('radiators') })[k];
+  const qtyOf = k => val({ walls: 'area', ceiling: 'ceilArea', slopes: 'slopes', decor: 'decorArea' }[k]);
 
   // on phones show the preview right under the controls, where the choice is made
 
@@ -413,7 +411,7 @@
   });
   const plural = n => (n % 10 === 1 && n % 100 !== 11) ? 'день' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 'дні' : 'днів';
   const kinds = n => n === 1 ? 'вид робіт' : (n >= 2 && n <= 4) ? 'види робіт' : 'видів робіт';
-  const bucketText = L => !L ? 'не потрібна' : L <= 3 ? 'одна банка 3 л' : L <= 10 ? 'одне відро 10 л' : (n => n <= 4 ? `${n} відра по 10 л` : `${n} відер по 10 л`)(Math.ceil(L / 10));
+  const bucketText = K => !K ? 'не потрібна' : (n => n === 1 ? '1 мішок по 30 кг' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? `${n} мішки по 30 кг` : (n % 10 === 1 && n % 100 !== 11) ? `${n} мішок по 30 кг` : `${n} мішків по 30 кг`)(Math.ceil(K / 30));
   const round = n => Math.round(n / 100) * 100;
   const shown = { min: 0, max: 0, days: 0, paint: 0, area: 0 };
   const render = () => {
@@ -439,7 +437,7 @@
       return { ...w, key: k, d: Math.max(1, Math.ceil(q[k] / w.per) + w.dry) };
     });
     const days = steps.reduce((t, p) => t + p.d, 0);
-    const paint = Object.keys(PAINT_L).reduce((t, k) => t + (keys.includes(k) ? q[k] * PAINT_L[k] : 0), 0) * 1.1; // +10% reserve
+    const paint = Object.keys(PAINT_L).reduce((t, k) => t + (keys.includes(k) ? q[k] * PAINT_L[k] : 0), 0) * 1.05; // +5% reserve
     const area = ['walls', 'ceiling', 'decor'].reduce((t, k) => t + (keys.includes(k) ? q[k] : 0), 0) || (keys.includes('prep') ? q.prep : 0);
     tweenNums({ min, max, days, paint, area });
     room.textContent = `${keys.length} ${kinds(keys.length)}`;
@@ -622,7 +620,7 @@
   }
   gsap.registerPlugin(ScrollTrigger, Flip);
 
-  // Hero: words painted by a roller, photo drops in, rest fades
+  // Hero: words revealed by a trowel sweep, photo drops in, rest fades
   const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
   tl.fromTo('[data-paint]', { clipPath: 'inset(-25% 100% -25% 0%)' }, { clipPath: 'inset(-25% -5% -25% 0%)', duration: 1.2, ease: 'power3.inOut', stagger: .45, clearProps: 'clipPath' }, .15)
     .from('[data-hero-photo]', { y: -80, rotate: -16, opacity: 0, duration: 1.3 }, .9)

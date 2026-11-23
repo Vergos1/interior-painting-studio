@@ -90,8 +90,8 @@ All prices are for labour only; materials are charged separately. The final amou
 | Technology         | Purpose                                                  |
 | ------------------ | -------------------------------------------------------- |
 | HTML5              | Semantic markup                                          |
-| CSS3               | Layout, theming and responsive design (`style.css`)      |
-| Vanilla JavaScript | Interactions, form logic, estimator (`script.js`)        |
+| CSS3               | Layout, theming and responsive design (`assets/css/style.css`)      |
+| Vanilla JavaScript | Interactions, form logic, estimator (`assets/js/script.js`)        |
 | GSAP 3.12          | Animations                                               |
 | ScrollTrigger      | Scroll-driven animations and the pinned/stacked sections |
 | Flip               | Smooth layout transitions (gallery filtering)            |
@@ -107,8 +107,10 @@ All libraries are loaded from CDNs, so there is nothing to install.
 ```text
 .
 ├── index.html     # Markup for all sections
-├── style.css      # Styles, design tokens and responsive rules
-├── script.js      # Animations, slider, gallery, lightbox, form and estimator
+├── assets/
+│   ├── css/style.css    # Styles, design tokens and responsive rules
+│   ├── js/script.js     # Animations, slider, gallery, lightbox, form and estimator
+│   └── images/          # Local photos (hero.jpg, before/after, works)
 └── README.md
 ```
 
@@ -143,10 +145,10 @@ Replace the placeholders before publishing:
 | Telegram                | `https://t.me/your_username` in the mobile menu and footer                                 |
 | Viber                   | `viber://chat?number=%2B380630000000` in the mobile menu and footer                        |
 | City and districts      | Title, meta description, hero tag, badge text, gallery captions and review locations       |
-| Prices                  | Service cards in section `#services`, FAQ answers and the estimator in `script.js`         |
+| Prices                  | Service cards in section `#services`, FAQ answers and the estimator in `assets/js/script.js`         |
 | Photos                  | Demo images come from Unsplash and Pexels; replace them with real project photos           |
 | Reviews and rating      | Review reels and the `4,9 / 86 reviews` block in section `#reviews`                        |
-| Brand colours and fonts | Design tokens at the top of `style.css`                                                    |
+| Brand colours and fonts | Design tokens at the top of `assets/css/style.css`                                                    |
 
 
 

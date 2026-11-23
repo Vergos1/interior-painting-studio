@@ -413,10 +413,19 @@ html {
 }
 
 .logo {
-    font: 900 20px/1 var(--f-display);
-    letter-spacing: -.04em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     justify-self: start;
+    color: var(--ink);
+    line-height: 0;
 }
+
+.logo__mark { height: 30px; width: auto; flex: none; }
+.logo__word { height: 17px; width: auto; flex: none; }
+.logo--lg .logo__mark { height: 44px; }
+.logo--lg .logo__word { height: 25px; }
+
 
 .nav {
     display: flex;
@@ -595,6 +604,18 @@ html {
 .hero__word {
     display: inline-block;
     padding-top: .08em;
+}
+
+.hero__word--brand {
+    font-size: .66em;
+    text-transform: none;
+    letter-spacing: -.045em;
+}
+
+.hero__line--sub {
+    font-size: .34em;
+    letter-spacing: -.01em;
+    margin-top: .15em;
 }
 
 .hero__mid {
